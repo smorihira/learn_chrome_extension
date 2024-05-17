@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Page Memo",
+    "version": "1.0",
+    "description": "Add notes to web pages and save them.",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ]
+}
