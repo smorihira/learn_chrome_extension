@@ -1,17 +1,38 @@
-#pageMemo {
+#memoContainer {
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     z-index: 1000;
     background-color: white;
-    color: black; /* Set text color to black */
     border: 1px solid #ccc;
-    padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    resize: none;
     font-family: Arial, sans-serif;
     font-size: 14px;
-  }
-   
+    display: flex;
+    flex-direction: column;
+}
+
+#memoHeader {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    cursor: move;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#pageMemo {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
