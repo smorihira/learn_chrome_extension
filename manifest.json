@@ -18,5 +18,15 @@
                 "content.css"
             ]
         }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "memo.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
     ]
 }

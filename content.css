@@ -45,7 +45,8 @@
     cursor: pointer;
     font-size: 12px;
     border-radius: 4px;
-    margin-left: 10px; // Adjust margin as needed
+    margin-left: 10px;
+    /* Adjust margin as needed */
 }
 
 #pageMemo {
